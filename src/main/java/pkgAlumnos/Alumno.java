@@ -8,7 +8,19 @@ public class Alumno {
     private String telefono;
     private String direccion;
 
-    private ArrayList<CursoAsignado>cursoAsignados;
+    private ArrayList<CursoAsignado> cursoAsignados;
+
+    public double getTotalCurso() {
+        double t = 0;
+        for (CursoAsignado c : getCursoAsignados()) {
+            t = t + c.getCostoCurso();
+        }
+        return t;
+    }
+
+
+
+
     //constructor
     public Alumno (String carnet, String nombre,String telefono, String direccion ){
         this.nombre=nombre;

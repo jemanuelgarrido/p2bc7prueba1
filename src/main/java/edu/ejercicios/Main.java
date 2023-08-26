@@ -14,15 +14,15 @@ public class Main {
         al1.agregarCursoAsignado(curso2);
         al1.agregarCursoAsignado(curso3);
         al1.agregarCursoAsignado(curso4);
-        for (CursoAsignado curso : al1.getCursoAsignados()){
-            System.out.println("Nombre del curso"+curso.getNombreCurso());
-            System.out.println("Costo"+curso.getCostoCurso());
-        }
-//        Alumno al2=new Alumno("2020055","Monica","097675434","5tacalle zona 4,Santa Cruz");
-//        al2.agregarCursoAsignado(curso1);
-//        al2.agregarCursoAsignado(curso4);
-//        al2.agregarCursoAsignado(curso2);
-//        al2.mostrarInformacion();
+        System.out.println("Tota; del Alumno"+al1.getNombre()+"Q"+al1.getTotalCurso());
+
+   Alumno al2=new Alumno("2020055","Monica","097675434","5tacalle zona 4,Santa Cruz");
+     al2.agregarCursoAsignado(curso1);
+        al2.agregarCursoAsignado(curso4);
+       al2.agregarCursoAsignado(curso2);
+        System.out.println("Tota; del Alumno"+al2.getNombre()+"Q"+al2.getTotalCurso());
+
+    System.out.println(al1.getTotalCurso()+al2.getNombre()+al2.getTotalCurso());
 
         //a. Crear 2 alumnos y asignar los cursos que queremos, al final sacar un reporte de cuanto paga cada alumno de matricula, al final cuanto es el total y el total individual de cada uno y al final cuanto paga  la universidad.
 
